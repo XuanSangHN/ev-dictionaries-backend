@@ -17,26 +17,22 @@ import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api/v1")
 public class FilesController {
     @Autowired
     FilesStorageService storageService;
 
-    @PostMapping("upload")
-    public ResponseEntity<MessageResponse> uploadFile(@RequestParam("file") MultipartFile file) {
-        String message = "";
+    @PostMapping("UploadImage")
+    public ResponseEntity<?>  uploadFile(@RequestParam("file") MultipartFile file) {
         try {
             storageService.uploadImgeProfile(file);
-
-            message = "Uploaded the file successfully: " + file.getOriginalFilename();
-            return ResponseEntity.status(HttpStatus.OK).body(new MessageResponse(message));
         } catch (Exception e) {
-            message = "Could not upload the file: " + file.getOriginalFilename() + "!";
-            return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new MessageResponse(message));
+            String message = "Không thể tải tệp lên: " + file.getOriginalFilename() + "!";
+            return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new MessageResponse((long) HttpStatus.EXPECTATION_FAILED.value(),HttpStatus.EXPECTATION_FAILED.getReasonPhrase(),message));
         }
+        return null;
     }
 
-    @GetMapping("/files/{filename:.+}")
+    @GetMapping("/Files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> getFile(@PathVariable String filename) {
         Resource file = storageService.load(filename);
@@ -44,7 +40,7 @@ public class FilesController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getFilename() + "\"").body(file);
     }
 
-    @GetMapping("/files")
+    @GetMapping("/Files")
     public ResponseEntity<List<User>> getListFiles() {
         List<User> fileInfos = storageService.loadAll().map(path -> {
             String filename = path.getFileName().toString();

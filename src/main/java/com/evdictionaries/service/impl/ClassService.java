@@ -40,13 +40,13 @@ public class ClassService implements IClassService {
     }
 
     @Override
-    public List<ClassRequest> getClassAll() {
-        List<ClassRequest> classRequests = new ArrayList<>();
-        List<Class> nationalEntities = classRepository.findAll();
-        for (Class nationalEntity : nationalEntities) {
-            ClassRequest classRequest = classConverter.toDto(nationalEntity);
-            classRequests.add(classRequest);
-        }
-        return classRequests;
+    public List<Class> getClassAll() {
+//        List<ClassRequest> classRequests = new ArrayList<>();
+//        List<Class> nationalEntities = classRepository.findAll();
+//        for (Class nationalEntity : nationalEntities) {
+//            ClassRequest classRequest = classConverter.toDto(nationalEntity);
+//            classRequests.add(classRequest);
+//        }
+        return classRepository.findAll();
     }
 }

@@ -1,13 +1,18 @@
 package com.evdictionaries.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "topic")
 public class Topic extends BaseEntity{
+    @JsonProperty("Name")
     private String name;
+    @JsonProperty("Image_Url")
     private String image;
+    @JsonProperty("Description")
     private String description;
 
     public Topic() {

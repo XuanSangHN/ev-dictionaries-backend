@@ -31,6 +31,26 @@ public class SignupRequest {
 
   private MultipartFile avatar;
 
+  private Long status;
+
+  private String address;
+
+  public Long getStatus() {
+    return status;
+  }
+
+  public void setStatus(Long status) {
+    this.status = status;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
   public MultipartFile getAvatar() {
     return avatar;
   }

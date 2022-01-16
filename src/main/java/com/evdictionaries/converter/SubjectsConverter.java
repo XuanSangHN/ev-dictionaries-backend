@@ -1,5 +1,6 @@
 package com.evdictionaries.converter;
 
+import com.evdictionaries.models.Class;
 import com.evdictionaries.models.Subjects;
 import com.evdictionaries.payload.request.SubjectsRequest;
 import org.springframework.stereotype.Component;
@@ -10,6 +11,9 @@ public class SubjectsConverter {
         Subjects subjects = new Subjects();
         subjects.setCode(subjectsRequest.getCode());
         subjects.setName(subjectsRequest.getName());
+        Class aClass = new Class();
+        aClass.setId(subjectsRequest.getId_class());
+        subjects.setClassEntity(aClass);
         subjects.setDescription(subjectsRequest.getDescription());
         return subjects;
     }
@@ -30,6 +34,9 @@ public class SubjectsConverter {
     }
 
     public Subjects toEntity(SubjectsRequest subjectsRequest, Subjects subjects) {
+        Class aClass = new Class();
+        aClass.setId(subjectsRequest.getId_class());
+        subjects.setClassEntity(aClass);
         subjects.setCode(subjectsRequest.getCode());
         subjects.setName(subjectsRequest.getName());
         subjects.setDescription(subjectsRequest.getDescription());

@@ -23,7 +23,7 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        storageService.deleteAll();
+//        storageService.deleteAll();
         storageService.init();
     }
 }

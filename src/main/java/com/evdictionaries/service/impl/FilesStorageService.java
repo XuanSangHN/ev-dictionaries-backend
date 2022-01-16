@@ -20,9 +20,9 @@ public class FilesStorageService implements IFilesStorageService {
     @Override
     public void init() {
         try {
-//            if (!Files.exists(root)) {
+            if (!Files.exists(root)) {
                 Files.createDirectory(root);
-//            }
+            }
         } catch (IOException e) {
             throw new RuntimeException("Could not initialize folder for upload!");
         }

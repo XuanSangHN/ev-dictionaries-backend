@@ -41,13 +41,7 @@ public class SubjectsService implements ISubjectsService {
     }
 
     @Override
-    public List<SubjectsRequest> getSubjectsAll() {
-        List<SubjectsRequest> subjectsRequests = new ArrayList<>();
-        List<Subjects> subjectsEntities = subjectsRepository.findAll();
-        for (Subjects subjects : subjectsEntities) {
-            SubjectsRequest classRequest = subjectsConverter.toDto(subjects);
-            subjectsRequests.add(classRequest);
-        }
-        return subjectsRequests;
+    public List<Subjects> getSubjectsAll() {
+        return subjectsRepository.findAll();
     }
 }

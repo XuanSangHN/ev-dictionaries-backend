@@ -1,5 +1,6 @@
 package com.evdictionaries.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -14,22 +15,27 @@ import java.util.Date;
 public class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("Id")
     private Long id;
 
     @Column
     @CreatedBy
+    @JsonProperty("CreatedBy")
     private String createdBy;
 
     @Column
     @CreatedDate
+    @JsonProperty("CreatedDate")
     private Date createdDate;
 
     @Column
     @LastModifiedBy
+    @JsonProperty("ModifiedBy")
     private String modifiedBy;
 
     @Column
     @LastModifiedDate
+    @JsonProperty("ModifiedDate")
     private Date modifiedDate;
 
     public String getCreatedBy() {

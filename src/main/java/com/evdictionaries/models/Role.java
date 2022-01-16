@@ -1,5 +1,7 @@
 package com.evdictionaries.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 @Entity
@@ -7,10 +9,12 @@ import javax.persistence.*;
 public class Role {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @JsonProperty("Id")
   private Integer id;
 
   @Enumerated(EnumType.STRING)
   @Column(length = 20)
+  @JsonProperty("Name")
   private ERole name;
 
   public Role() {

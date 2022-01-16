@@ -1,5 +1,6 @@
 package com.evdictionaries.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -20,24 +21,75 @@ public class User extends BaseEntity implements Serializable {
 
     @NotBlank
     @Size(max = 20)
+    @JsonProperty("Username")
     private String username;
 
     @NotBlank
     @Size(max = 50)
     @Email
+    @JsonProperty("Email")
     private String email;
 
     @NotBlank
     @Size(max = 120)
+    @JsonProperty("Password")
     private String password;
 
+    @JsonProperty("Firstname")
     private String firstname;
 
+    @JsonProperty("Lastname")
     private String lastname;
 
+    @JsonProperty("Phonenumber")
     private String phonenumber;
 
+    @JsonProperty("Avatar_Url")
     private String avatar;
+
+    @JsonProperty("Status")
+    private Long status;
+
+    @JsonProperty("Address")
+    private String address;
+
+    @OneToMany(mappedBy="user")
+    private Set<Class> classes;
+
+    @Column(name = "reset_password_token")
+    private String resetPasswordToken;
+
+    public String getResetPasswordToken() {
+        return resetPasswordToken;
+    }
+
+    public void setResetPasswordToken(String resetPasswordToken) {
+        this.resetPasswordToken = resetPasswordToken;
+    }
+
+    public Long getStatus() {
+        return status;
+    }
+
+    public void setStatus(Long status) {
+        this.status = status;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Set<Class> getClasses() {
+        return classes;
+    }
+
+    public void setClasses(Set<Class> classes) {
+        this.classes = classes;
+    }
 
     public String getFirstname() {
         return firstname;
@@ -75,6 +127,7 @@ public class User extends BaseEntity implements Serializable {
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JsonProperty("Roles")
     private Set<Role> roles = new HashSet<>();
 
     public User() {
@@ -130,5 +183,16 @@ public class User extends BaseEntity implements Serializable {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public User(String username, String email, String password, String firstname, String lastname, String phonenumber, Long status, String address) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phonenumber = phonenumber;
+        this.status = status;
+        this.address = address;
     }
 }

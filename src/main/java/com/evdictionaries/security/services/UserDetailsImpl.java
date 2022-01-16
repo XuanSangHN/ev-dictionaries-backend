@@ -2,11 +2,13 @@ package com.evdictionaries.security.services;
 
 import com.evdictionaries.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -22,10 +24,46 @@ public class UserDetailsImpl implements UserDetails {
     private String lastname;
     private String phonenumber;
     private String avatar;
+    private Long status;
+    private String address;
+    private String createdBy;
+    private Date createdDate;
     private Collection<? extends GrantedAuthority> authorities;
 
+    public Long getStatus() {
+        return status;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public void setStatus(Long status) {
+        this.status = status;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public UserDetailsImpl(Long id, String username, String email, String password,
-                           Collection<? extends GrantedAuthority> authorities, String firstname, String lastname, String phonenumber, String avatar) {
+                           Collection<? extends GrantedAuthority> authorities, String firstname, String lastname, String phonenumber, String avatar, Long status, String address,String createdBy,Date createdDate) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -35,6 +73,10 @@ public class UserDetailsImpl implements UserDetails {
         this.lastname = lastname;
         this.phonenumber = phonenumber;
         this.avatar = avatar;
+        this.status = status;
+        this.address = address;
+        this.createdBy = createdBy;
+        this.createdDate = createdDate;
     }
 
     public static UserDetailsImpl build(User user) {
@@ -51,7 +93,11 @@ public class UserDetailsImpl implements UserDetails {
                 user.getFirstname(),
                 user.getLastname(),
                 user.getPhonenumber(),
-                user.getAvatar());
+                user.getAvatar(),
+                user.getStatus(),
+                user.getAddress(),
+                user.getCreatedBy(),
+                user.getCreatedDate());
     }
 
     public void setId(Long id) {
