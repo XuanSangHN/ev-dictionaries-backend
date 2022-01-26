@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.validation.constraints.Size;
 import java.util.Set;
 
-public class SignupRequest {
+public class SignupRequest extends AbstractRequest<SignupRequest> {
   @NotBlank
   @Size(min = 3, max = 20)
   private String username;

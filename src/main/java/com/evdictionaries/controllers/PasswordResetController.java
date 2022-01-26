@@ -37,7 +37,7 @@ public class PasswordResetController {
     @PreAuthorize("hasRole('ADMIN')")
     public void resetPassword(@Valid @RequestBody ResetPasswordRequest resetPasswordRequest){
         String email = resetPasswordRequest.getEmail();
-        String token = RandomString.make(45);
+        String token = RandomString.make(65);
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 
         try {

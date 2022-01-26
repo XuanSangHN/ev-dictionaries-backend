@@ -1,9 +1,7 @@
 package com.evdictionaries.repository;
 
 import com.evdictionaries.models.Class;
-import com.evdictionaries.models.Subjects;
 import com.evdictionaries.models.User;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

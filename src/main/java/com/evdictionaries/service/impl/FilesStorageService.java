@@ -1,6 +1,7 @@
 package com.evdictionaries.service.impl;
 
 import com.evdictionaries.service.IFilesStorageService;
+import net.bytebuddy.utility.RandomString;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,8 @@ public class FilesStorageService implements IFilesStorageService {
     @Override
     public void uploadImgeProfile(MultipartFile file) {
         try {
-            Files.copy(file.getInputStream(), this.root.resolve(file.getOriginalFilename()));
+            String random = RandomString.make(20);
+            Files.copy(file.getInputStream(), this.root.resolve(file.getOriginalFilename().replace(file.getOriginalFilename(), random+"_"+file.getOriginalFilename())));
         } catch (Exception e) {
             throw new RuntimeException("Could not store the file. Error: " + e.getMessage());
         }

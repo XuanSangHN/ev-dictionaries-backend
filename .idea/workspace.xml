@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c166ffc8-3fb9-4383-82a3-50c46051eae7" name="Default Changelist" comment="" />
+    <list default="true" id="c166ffc8-3fb9-4383-82a3-50c46051eae7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/PasswordResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/PasswordResetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/payload/request/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/payload/request/SignupRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/repository/ClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/repository/ClassRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/security/services/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/security/services/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evdictionaries/service/impl/FilesStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evdictionaries/service/impl/FilesStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/controllers/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/controllers/PasswordResetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/controllers/PasswordResetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/controllers/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/controllers/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/models/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/payload/request/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/payload/request/SignupRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/repository/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/repository/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/security/services/UserDetailsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/security/services/UserDetailsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/evdictionaries/service/impl/FilesStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/evdictionaries/service/impl/FilesStorageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/nguyen_hoang_ngoc_huyen.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +82,9 @@
     <dirStrings>
       <dir>C:\Users\xuans\Desktop\ProjectEL\ELBackEnd\src\main\java\com\evdictionaries\controllers</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -317,6 +350,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1641748949120" />
@@ -328,48 +362,27 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.evdictionaries.api" />
-      <recent name="com.evdictionaries.payload.response" />
-      <recent name="com.evdictionaries.payload.request" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xuans\Desktop\ProjectEL\ELBackEnd\src\main\java\com\evdictionaries" />
       <recent name="C:\Users\xuans\Desktop\ProjectEL\ELBackEnd\src\main\java\com\evdictionaries\models" />
       <recent name="C:\Users\xuans\Desktop\ProjectEL\ELBackEnd\src\main\java\com\evdictionaries\repository" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.evdictionaries.api" />
+      <recent name="com.evdictionaries.payload.response" />
+      <recent name="com.evdictionaries.payload.request" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.evdictionaries.Application" />
-      <module name="ELBackEnd" />
+      <module name="ev-dictionaries-backend" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.evdictionaries.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ELBackEnd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.evdictionaries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evdictionaries.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <additionalParameters>
-        <param>
-          <option name="enabled" value="true" />
-          <option name="name" value="server.port" />
-          <option name="value" value="8081" />
-        </param>
-      </additionalParameters>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -473,6 +486,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -532,19 +556,9 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/security/services/UserDetailsImpl.java</url>
-          <line>101</line>
+          <line>113</line>
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/security/jwt/JwtUtils.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/security/jwt/AuthEntryPointJwt.java</url>
@@ -555,21 +569,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/payload/response/UserResponse.java</url>
           <line>58</line>
           <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/error/CustomErrorException.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/CustomControllerAdvice.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/service/impl/ClassService.java</url>
@@ -592,41 +591,6 @@
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/SubjectsController.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>203</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/PasswordResetController.java</url>
           <line>43</line>
           <option name="timeStamp" value="131" />
@@ -645,6 +609,36 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/PasswordResetController.java</url>
           <line>59</line>
           <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/RoleController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/ClassController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
+          <line>257</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
+          <line>290</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
+          <line>285</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/evdictionaries/controllers/AuthController.java</url>
+          <line>301</line>
+          <option name="timeStamp" value="147" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

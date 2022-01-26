@@ -10,34 +10,52 @@ public class Role {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @JsonProperty("Id")
-  private Integer id;
+  private Long id;
 
   @Enumerated(EnumType.STRING)
   @Column(length = 20)
+  @JsonProperty("Code")
+  private ERole code;
+
   @JsonProperty("Name")
-  private ERole name;
+  private String name;
+
+  @JsonProperty("Description")
+  private String description;
 
   public Role() {
 
   }
 
-  public Role(ERole name) {
-    this.name = name;
-  }
-
-  public Integer getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
-  public ERole getName() {
+  public ERole getCode() {
+    return code;
+  }
+
+  public void setCode(ERole code) {
+    this.code = code;
+  }
+
+  public String getName() {
     return name;
   }
 
-  public void setName(ERole name) {
+  public void setName(String name) {
     this.name = name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
   }
 }

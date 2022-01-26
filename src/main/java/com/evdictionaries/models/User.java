@@ -59,8 +59,19 @@ public class User extends BaseEntity implements Serializable {
     @Column(name = "reset_password_token")
     private String resetPasswordToken;
 
+    @Column(name = "verification_code")
+    private String verificationCode;
+
     public String getResetPasswordToken() {
         return resetPasswordToken;
+    }
+
+    public String getVerificationCode() {
+        return verificationCode;
+    }
+
+    public void setVerificationCode(String verificationCode) {
+        this.verificationCode = verificationCode;
     }
 
     public void setResetPasswordToken(String resetPasswordToken) {
@@ -185,14 +196,20 @@ public class User extends BaseEntity implements Serializable {
         this.roles = roles;
     }
 
-    public User(String username, String email, String password, String firstname, String lastname, String phonenumber, Long status, String address) {
+    public User(String username, String email, String password, String firstname, String lastname, String phonenumber, String address) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.firstname = firstname;
         this.lastname = lastname;
         this.phonenumber = phonenumber;
-        this.status = status;
+        this.address = address;
+    }
+
+    public User(String firstname, String lastname, String phonenumber, String address) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phonenumber = phonenumber;
         this.address = address;
     }
 }

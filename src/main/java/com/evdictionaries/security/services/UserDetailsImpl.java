@@ -27,6 +27,7 @@ public class UserDetailsImpl implements UserDetails {
     private Long status;
     private String address;
     private String createdBy;
+    private String verificationCode;
     private Date createdDate;
     private Collection<? extends GrantedAuthority> authorities;
 
@@ -36,6 +37,14 @@ public class UserDetailsImpl implements UserDetails {
 
     public String getCreatedBy() {
         return createdBy;
+    }
+
+    public String getVerificationCode() {
+        return verificationCode;
+    }
+
+    public void setVerificationCode(String verificationCode) {
+        this.verificationCode = verificationCode;
     }
 
     public void setCreatedBy(String createdBy) {
@@ -63,7 +72,7 @@ public class UserDetailsImpl implements UserDetails {
     }
 
     public UserDetailsImpl(Long id, String username, String email, String password,
-                           Collection<? extends GrantedAuthority> authorities, String firstname, String lastname, String phonenumber, String avatar, Long status, String address,String createdBy,Date createdDate) {
+                           Collection<? extends GrantedAuthority> authorities, String firstname, String lastname, String phonenumber, String avatar, Long status, String address,String createdBy,Date createdDate,String verificationCode) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -77,11 +86,12 @@ public class UserDetailsImpl implements UserDetails {
         this.address = address;
         this.createdBy = createdBy;
         this.createdDate = createdDate;
+        this.verificationCode = verificationCode;
     }
 
     public static UserDetailsImpl build(User user) {
         List<GrantedAuthority> authorities = user.getRoles().stream()
-                .map(role -> new SimpleGrantedAuthority(role.getName().name()))
+                .map(role -> new SimpleGrantedAuthority(role.getCode().name()))
                 .collect(Collectors.toList());
 
         return new UserDetailsImpl(
@@ -97,7 +107,9 @@ public class UserDetailsImpl implements UserDetails {
                 user.getStatus(),
                 user.getAddress(),
                 user.getCreatedBy(),
-                user.getCreatedDate());
+                user.getCreatedDate(),
+                user.getVerificationCode()
+        );
     }
 
     public void setId(Long id) {
